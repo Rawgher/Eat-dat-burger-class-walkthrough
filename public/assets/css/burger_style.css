@@ -1,0 +1,164 @@
+#background-color {
+    background-color: #FBD16E;
+}
+
+.wrapper {
+    margin-bottom: 0px;
+}
+
+.black-text {
+    color: #000;
+}
+
+.col-pad-top {
+    padding-top: 100px !important;
+}
+
+.img-pad-top {
+    padding-top: 30px !important;
+}
+
+.bold {
+    font-weight: bolder;
+}
+
+.waves-effect img {
+    top: 5px;
+}
+
+.input-field input[type=text]:focus {
+    border-bottom: 1px solid #000 !important;
+    box-shadow: 0 1px 0 0 #000 !important;
+  }
+
+  .input-field input[type=text]::placeholder {
+    color: #000 !important;
+    opacity: 0.3 !important;
+  }
+
+  #white-color {
+      filter: invert(1);
+  }
+
+  .collection.with-header .collection-item {
+    padding-left: 15px;
+}
+
+.reset-margins {
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+.mar-bot {
+    margin-bottom: 2px;
+}
+
+@media screen and (max-width: 1024px) {
+    .remove {
+        width: 0% !important;
+        padding: 0px !important;
+    }
+    
+    .new-spot {
+        padding-right: 56px !important;
+        padding-left: 14px !important;
+    }
+
+    .rethink {
+        margin-left: 34px;
+    }
+}
+
+@media screen and (max-width: 768px) {  
+
+    .img-pad-top {
+        padding-top: 65px !important;
+    }
+
+    .remove {
+        width: 16.6666666667% !important;
+        margin-left: auto !important;
+        left: auto !important;
+        right: auto !important;
+    }
+    
+    .new-spot {
+        width: 33.3333333333% !important;
+        margin-left: auto !important;
+        left: auto !important;
+        right: auto !important;
+        padding: 0 .75rem !important;
+    }
+
+    .rethink {
+        margin-left: 56px;
+    }
+
+}
+
+
+@media screen and (max-width: 599px) {  
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .center {
+    width: 75%;
+    position: relative;
+    order: 1;
+    }
+
+    .left {
+        width: 75%;
+        position: relative;
+        order: 2;
+    }
+
+    .right {
+        width: 75%;
+        position: relative;
+        order: 3;  
+    }
+
+    .col-pad-top {
+        padding-top: 10px !important;
+    }
+
+}
+
+@media screen and (max-width: 425px) {
+    .reset-margins {
+        margin-top: 10px;
+        margin-bottom: 7px;
+    }
+
+    .rethink {
+        margin-left: 140px;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .rethink {
+        margin-left: 132px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .rethink {
+        margin-left: 116px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .rethink {
+        margin-left: 108px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .rethink {
+        margin-left: 90px;
+    }
+}

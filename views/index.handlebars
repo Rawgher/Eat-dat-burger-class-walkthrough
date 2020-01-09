@@ -1,0 +1,73 @@
+<div class="container">
+    <div class="row wrapper">
+        <div class="col s12 m4 l3 col-pad-top left" id="refresh-this">
+
+            <ul class="collection with-header center-align" id="new-burgers">
+                <li class="collection-header center-align">
+                    <h6 class="bold">Burgers to Eat!</h6>
+                </li>
+                {{#each burgers}}
+                {{#unless devoured}}
+                <li class="collection-item">
+                    {{burger_name}}
+                    <div class="row reset-margins">
+                        <div class="col s2 remove"></div>
+                        <div class="col s4 new-spot">
+                            <button class="btn btn-small waves-effect waves-light red switch-devour" type="submit" name="action"
+                                data-id="{{id}}" data-eaten="{{devoured}}"><i class="material-icons">thumb_up</i></button>
+                        </div>
+                        <div class="col s4 new-spot">
+                            <button class="btn btn-small waves-effect waves-light red delete-burger" data-id="{{id}}"><i
+                                    class="material-icons">thumb_down</i></button>
+                        </div>
+                    </div>
+                </li>
+                {{/unless}}
+                {{/each}}
+            </ul>
+        </div>
+
+        <div class="col s12 m4 l6 img-pad-top center">
+            <img src="/assets/img/smaller-burger.svg">
+            <h3 class="center-align">Eat-Dat-Burger</h3>
+        </div>
+
+        <div class="col s12 m4 l3 col-pad-top right center-align">
+
+            <ul class="collection with-header" id="eaten-burgers">
+                <li class="collection-header center-align">
+                    <h6 class="bold">Burger Hall of Fame!</h6>
+                </li>
+                {{#each burgers}}
+                {{#if devoured}}
+                <li class="collection-item">
+                    {{burger_name}}
+                    <div class="row reset-margins">
+                        <div class="col s12 new-spot">
+                            <button class="btn btn-small waves-effect waves-light red rethink" data-id="{{id}}"><i
+                                    class="material-icons">thumbs_up_down</i></button>
+                        </div>
+                    </div>
+                </li>
+                {{/if}}
+                {{/each}}
+            </ul>
+        </div>
+    </div>
+
+    <div class="row">
+        <form class="col s12 center-align" id="burgerForm">
+            <div class="row mar-bot">
+                <div class="col s12 m2 l2"></div>
+                <div class="input-field col s12 m8 l8" id="burger-input">
+                    <input placeholder="Add A Burger!" id="newBurgerName" type="text" class="black-text">
+                </div>
+            </div>
+            <div class="row">
+                <button class="btn waves-effect waves-light red" type="submit" name="action">Submit your Burger <img
+                        src="/assets/img/fastfood-white.svg" id="white-color"></button>
+            </div>
+        </form>
+        <p class="center-align">Enter the name of a burger you'd like to eat above. Then hit submit!</p>
+    </div>
+</div>
